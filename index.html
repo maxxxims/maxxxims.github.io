@@ -1,0 +1,220 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+<html>
+<head>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data1 = google.visualization.arrayToDataTable([
+          ['Eleme', '', { role: 'style' }],
+          ['МФТИ', 39, 'color: #7584df'],
+          ['МГУ', 21, 'color: #98e984'],
+          ['СПБГУ', 16, 'color: #f57a61'],
+          ['ВШЭ', 8, 'color: #d4cc45']
+        ]);
+
+        var options1 = {
+          title: 'РАСПРЕДЕЛЕНИЕ ПОБЕДИТЕЛЕЙ И ПРИЗЕРОВ ОЛИМПИДА ПО ВУЗАМ В 2013'
+
+        };
+
+        var data2 = google.visualization.arrayToDataTable([
+          ['Element', '', {}],
+          ['ФИФТ',     20, '#d4cc47'],
+          ['ФОПФ',      14, '#f27c60'],
+          ['Другие факультеты',  5, '#b1b1b1']
+        ]);
+
+        var options2 = {
+          title: 'РАСПРЕДЕЛЕНИЕ ПОБЕДИТЕЛЕЙ И ПРИЗЕРОВ ОЛИМПИДА ПО ФАКУЛЬТЕТАМ В 2013',
+          pieHole: 0.4,
+          colors: ['#d4cc47', '#f27c60', '#b1b1b1']
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('piechart'));
+        var chart2 = new google.visualization.PieChart(document.getElementById('piechart2'));
+
+        chart.draw(data1, options1);
+        chart2.draw(data2, options2);
+      }
+
+    </script>
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+            .row{margin:50 50 150 50}
+            .col-md-6{margin-bottom: 1%}
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+
+<div class="container">
+    <div class="row">
+
+
+        <div class="col-md-6">
+            <div id="piechart" style="width: 500px; height: 500px;"></div>
+        </div>
+
+        <div class="col-md-6">
+            <div id="piechart2" style="width: 500px; height: 500px;"></div>
+        </div>
+
+
+        <h1>Породы кошек и виды котов</h1>
+        <p> Мир кошек удивительно многолик. На сегодняшний день существует более двухсот официально признанных кошачьих
+            пород. Чтобы легко ориентироваться во всём многообразии, необходимо понять принципы классификации этих
+            млекопитающих.</p>
+        <p>Изначально виды кошек различали по длине шерсти. Существовало всего две категории: короткошёрстные и
+            длинношёрстные. Но время показало несостоятельность такой систематизации: вследствие естественных мутаций
+            или в результате работы селекционеров появились кошки с шерстью средней длины, которых невозможно было
+            отнести ни к одной из двух категорий. Плюс ко всему животные очень часто отличались по размеру: большие
+            кошки, маленькие, средние — это тоже нужно было учитывать. Поэтому фелинологи предложили четыре варианта
+            классификации кошек.</p>
+    </div>
+    <div class="row">
+
+        <h2>1. По телосложению.</h2>
+        <div class="col-sm">
+            <img src="image/photo1.jpg" class="img-thumbnail">
+        </div>
+
+        <div class="col-sm">
+            <p>Здесь всего две категории: кошки с крепким телосложением и кошки — с изящным. </p>
+            <p>К первым можно отнести <b>короткошёрстных шартрезов</b>, выведенных во Франции. Они отличаются
+                массивным
+                туловищем
+                с тяжёлым костяком и сильными мышцами.</p>
+            <p>Самые популярные представители породы с изящным телосложением — <b>сиамские кошки</b>.
+                Активные, игривые, общительные и доверчивые — яркая противоположность шартрезам.</p>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="container">
+
+    <div class="row">
+
+        <h2>2. По типу шёрстного покрова:</h2>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <img src="image/photo2.jpg" class="img-thumbnail">
+            <p><strong> Бурманская </strong> кошка не сложна в уходе, поскольку имеет минимальный подшёрсток, не
+                позволяющий спутываться
+                шерсти в колтуны. Достаточно пару раз в неделю проходиться по шелковистой шубке гребнем с частыми
+                зубчиками и массировать кожу массажной щёткой, удаляя отмершие волоски и стимулируя рост новых. Правда,
+                в период сезонной линьки вычёсывать домашнего питомца придётся минимум два раза в сутки.</p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <img src="image/photo3.jpg" class="img-thumbnail">
+            <p><strong>Русская голубая кошка </strong>характер имеет мягкий, но независимый. Она любит общение, но не
+                слишком приемлет
+                объятия и физический контакт. Вычесать её она вам вряд ли позволит, но при этом никогда не выпустит
+                когти, если вы всё-таки попробуете настоять на своём.</p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <img src="image/photo4.jpg" class="img-thumbnail">
+            <p>Кудрявые красавцы <strong> корниш-рекс </strong>со своей каракулевой шёрсткой вполне справляются
+                самостоятельно. Но вот
+                коготками вам придётся регулярно заниматься: подушечки лапок слишком малы, и не могут вместить их в себя
+                полностью. Поэтому корниш-рексу регулярно необходимо делать кошачий «маникюр». Необходимые рекомендации
+                по этой процедуре вы сможете получить у ветеринарного врача. А ещё эта порода склонна к перееданию,
+                поэтому количество корма должно быть строго регламентировано.</p>
+        </div>
+
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <img src="image/photo5.jpg" class="img-thumbnail">
+            <p><strong> Американские жесткошёрстные</strong> кошки отличаются волнистой шерстью. Эффект «проволочной
+                шубки» создают
+                шерстинки на бёдрах, хвосте, голове и хребте, которые либо надломлены, либо загнуты и скреплены между
+                собой. Животных этой породы расчёсывать не рекомендуется даже после купания, иначе «пружинки» шерсти
+                исчезнут, и животное потеряет свой шарм и обаяние.</p>
+        </div>
+
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <img src="image/photo6.jpg" class="img-thumbnail">
+            <p>Одни считают, что <strong>сфинксы</strong> – это лучшие кошки в мире, другие совершенно не понимают, как
+                можно хотя бы
+                приблизиться к такому животному, не говоря уже о том, чтобы погладить его. Тем не менее, сфинксам нужна
+                ласка и внимание. А ещё они нуждаются в тепле: бесшёрстные кошки часто мёрзнут, и чтобы согреться, могут
+                лечь на батарею или прислониться к работающей духовке, что чревато ожогами нежной кошачьей кожи. Поэтому
+                владельцу сфинкса необходимо позаботиться о тёплой лежанке для питомца и о том, чтобы в доме не было
+                сквозняков.</p>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container">
+
+    <div class="row">
+        <h2>3. По типу окраса:</h2>
+
+        <div class="col-md-6">
+            <center><p><strong>одноцветные (гавана)</strong></p></center>
+            <img src="image/photo7.jpg" class="img-thumbnail">
+
+        </div>
+
+        <div class="col-md-6">
+            <center><p><strong>двухцветные (рэгдолл)</strong></p></center>
+            <img src="image/photo8.jpg" class="img-thumbnail">
+
+        </div>
+
+
+        <div class="col-md-6">
+            <center><p><strong>пёстрые (мейн-кун)</strong></p></center>
+            <img src="image/photo9.jpg" class="img-thumbnail">
+
+        </div>
+
+        <div class="col-md-6">
+            <center><p><strong>c крапом (американская короткошерстная)</strong></p></center>
+            <img src="image/photo10.jpg" class="img-thumbnail">
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
+
+</body>
+
+</html>
